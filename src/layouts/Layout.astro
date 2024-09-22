@@ -12,7 +12,7 @@ const { title } = Astro.props;
 
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Astro description" />
+        <meta name="description" content="Portfolio Web Tagliani" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
@@ -63,13 +63,13 @@ const { title } = Astro.props;
             font-size: 25px;
              font-weight: 300;
              line-height: 1;
-            text-aling: center;
+            text-align: left;
             }
             h3 {
             font-size: 23px;
              font-weight: 300;
              line-height: 1;
-            text-aling: center;
+            text-align: left;
             }
             .text-gradient {
                 background-image: var(--accent-gradient);
@@ -103,9 +103,9 @@ const { title } = Astro.props;
                 padding: 0;
             }
         </style>
-	   <Header />
     </head>
     <body>
+        <Header />
         <slot />
     </body>
 </html>
