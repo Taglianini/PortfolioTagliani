@@ -9,23 +9,9 @@ import Wordpress from "../icons/Wordpress.astro"
 import Node from "../icons/Node.astro"
 import Notion from "../icons/Notion.astro"
 ---
-<style>
-     @keyframes scroll {
-         0% {
-             transform: translateX(0);
-         }
-         100% {
-             transform: translateX(-100%);
-         }
-     }
-
-     .scrolling-animation {
-         animation: scroll 12s linear infinite;
-     }
- </style>
 <body class="">
-<div class="overflow-hidden w-full">
-     <div class="flex scrolling-animation space-x-6">
+<div class="">
+     <div class="flex space-x-2">
           <CSS/>
           <HTML/>
           <Tailwind/>
@@ -36,5 +22,5 @@ import Notion from "../icons/Notion.astro"
           <Node/>
           <Notion/>
      </div>
-     
+    </div>
 </body>
