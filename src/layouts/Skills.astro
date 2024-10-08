@@ -9,9 +9,35 @@ import Wordpress from "../icons/Wordpress.astro"
 import Node from "../icons/Node.astro"
 import Notion from "../icons/Notion.astro"
 ---
-<body class="">
-<div class="">
-     <div class="flex space-x-2">
+<style>
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+        
+    }
+    .animate-scroll {
+        animation: scroll 10s linear infinite; /* Ajusta el tiempo según necesites */
+        display: flex;
+        width: 200%; /* El doble del ancho para hacer que se mueva sin saltos */
+    }
+    
+</style>
+<body class="-m-24">
+<div class="overflow-hidden w-full">
+     <div class="flex animate-scroll space-x-5">
+          <CSS/>
+          <HTML/>
+          <Tailwind/>
+          <JS/>
+          <AstroIcon/>
+          <Figma/>
+          <Wordpress/>
+          <Node/>
+          <Notion/>
           <CSS/>
           <HTML/>
           <Tailwind/>
