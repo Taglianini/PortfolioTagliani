@@ -6,8 +6,8 @@ import JS from "../icons/JS.astro"
 import AstroIcon from "../icons/AstroIcon.astro"
 import Figma from "../icons/Figma.astro"
 import Wordpress from "../icons/Wordpress.astro"
-import Notion from "../icons/Notion.astro"
 ---
+
 <style>
     @keyframes scroll {
         0% {
@@ -18,7 +18,7 @@ import Notion from "../icons/Notion.astro"
         }
     }
     .animate-scroll {
-        animation: scroll 11s linear infinite;
+        animation: scroll 10s linear infinite;
         display: flex;
         width: 200%;
     }
@@ -30,25 +30,51 @@ import Notion from "../icons/Notion.astro"
 
 <body>
     <h3 class="text-3xl opacity-95 mt-6 mb-4">Skills</h3>
-    <div class="overflow-hidden -mt-20 group">
-         <div class="flex animate-scroll space-x-7">
-              <CSS/>
-              <HTML/>
-              <Tailwind/>
-              <JS/>
-              <AstroIcon/>
-              <Figma/>
-              <Wordpress/>
-              <Notion/>
-              <CSS/>
-              <HTML/>
-              <Tailwind/>
-              <JS/>
-              <AstroIcon/>
-              <Figma/>
-              <Wordpress/>
-              <Notion/>
-         </div>
+    <div class="overflow-hidden group">
+        <div class="flex animate-scroll space-x-7 h-20">
+            <div class="w-16 h-16 flex items-center justify-center">
+                <CSS class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <HTML class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <Tailwind class="w-full h-full"/>
+            </div>
+            <div class="w-14 h-14 flex items-center justify-center">
+                <JS class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <AstroIcon class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <Figma class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <Wordpress class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <CSS class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <HTML class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <Tailwind class="w-full h-full"/>
+            </div>
+            <div class="w-14 h-14 flex items-center justify-center">
+                <JS class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <AstroIcon class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <Figma class="w-full h-full"/>
+            </div>
+            <div class="w-16 h-16 flex items-center justify-center">
+                <Wordpress class="w-full h-full"/>
+            </div>
+        </div>
     </div>
 </body>
 
