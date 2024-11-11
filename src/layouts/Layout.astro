@@ -38,7 +38,7 @@ const { title } = Astro.props;
             }
             main {
                 margin: auto;
-                padding: 4rem;
+                padding: 3rem;
                 width: 900px;
                 max-width: calc(100% - 2rem);
                 color: rgb(235, 235, 235);
@@ -104,6 +104,31 @@ const { title } = Astro.props;
                 gap: 2rem;
                 padding: 0;
             }
+        @media (max-width: 768px) {
+            main {
+                padding: 2rem;
+                font-size: 18px; /* Reduce el tamaño de la fuente */
+            }
+
+            h1 {
+                font-size: 2.5rem; /* Ajuste del título para pantallas pequeñas */
+                margin-bottom: 20px; /* Reduce el margen inferior */
+            }
+
+            h2, h3 {
+                font-size: 20px; /* Ajuste de subtítulos */
+            }
+
+            .link-card-grid {
+                grid-template-columns: 1fr; /* Columnas de una sola fila para mejor legibilidad */
+                gap: 1.5rem; /* Reduce el espacio entre tarjetas */
+            }
+
+            .astro-a {
+                top: -16px; /* Ajusta la posición del elemento */
+                width: 180px; /* Reduce el tamaño del ícono */
+            }
+        }
         </style>
     </head>
     <body>
