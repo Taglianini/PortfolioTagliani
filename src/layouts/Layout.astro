@@ -1,5 +1,6 @@
 ---
-import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Navbar.astro';
 interface Props {
     title: string;
 }
@@ -106,6 +107,22 @@ const { title } = Astro.props;
                 gap: 2rem;
                 padding: 0;
             }
+            .footer {
+                display: flex;
+                justify-content: center ;
+                align-items: center;
+                background-color: #4ade80E2;
+                height: 100px; 
+                width: 80%; 
+                max-width: 1200px; 
+                margin: auto; 
+                border-radius: 15px 15px 0 0; 
+}
+
+            .footer-content {
+                text-align: center;
+                padding: 10px;
+            } 
         @media (max-width: 768px) {
             main {
                 padding: 2rem;
@@ -136,5 +153,6 @@ const { title } = Astro.props;
     <body>
         <Header />
         <slot />
+        <Footer/>
     </body>
 </html>
